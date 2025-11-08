@@ -6,12 +6,12 @@
     <meta name="description" content="Professional and responsive website built with HTML, TailwindCSS, and JavaScript." />
     <meta name="keywords" content="web design, TailwindCSS, responsive website, HTML, JavaScript" />
     <meta name="author" content="Akieboye Godgift" />
-    <meta property="og:title" content="Responsive Website" />
+    <meta property="og:title" content="GIFWATCH3S | Luxury Watch Brands for you" />
     <meta property="og:description" content="A modern and responsive website built with TailwindCSS." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yourdomain.com" />
     <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
-    <title>Responsive Tailwind Website</title>
+    <title>GIFWATCH3S | Luxury Watch Brands for you</title>
 
     <!-- TailwindCSS CDN -->
     <link rel="stylesheet" href="/css/styles.css">
@@ -28,147 +28,164 @@
     
     <nav
     id="navbar"
-    class="navbar fixed w-[90%] left-1/2 -translate-x-1/2 top-5 z-50 flex justify-between items-center rounded-3xl px-6 py-3 glass-bg shadow-lg transition-all duration-500"
+    class="navbar fixed w-[90%] left-1/2 -translate-x-1/2 top-5 z-50 flex justify-between items-center rounded-3xl px-6 py-3 glass-bg shadow-lg transition-all duration-500 text-black dark:text-white"
     >
     <!-- Logo -->
     <div class="flex items-center space-x-3">
-        <img src="/assets/logo.png" alt="Logo" class="w-14 h-14 object-contain select-none logo" />    
-    <div class="font-semibold text-xl select-none">GIFWATCH3S</div>
+        <img src="/assets/logo.png" alt="Logo" class="w-14 h-14 object-contain select-none logo" />
+        <div class="font-semibold text-xl select-none">GIFWATCH3S</div>
     </div>
 
     <!-- Desktop Links -->
     <ul class="hidden md:flex space-x-8 font-medium">
-    <li><a href="#hero" class="hover:text-gray-500 transition">Home</a></li>
-    <li><a href="#about" class="hover:text-gray-500 transition">About</a></li>
-    <li><a href="#whatwedo" class="hover:text-gray-500 transition">What we do</a></li>
-    <li><a href="#contact" class="hover:text-gray-500 transition">Contact</a></li>
+        <li><a href="#hero" class="hover:text-gray-500 dark:hover:text-gray-300 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-500 dark:hover:text-gray-300 transition">About</a></li>
+        <li><a href="#whatwedo" class="hover:text-gray-500 dark:hover:text-gray-300 transition">What we do</a></li>
+        <li><a href="#contact" class="hover:text-gray-500 dark:hover:text-gray-300 transition">Contact</a></li>
     </ul>
 
     <!-- Icons -->
     <div class="flex items-center space-x-4">
-    <a
+        <a
         href="tel:08122981722"
         class="icon-btn w-10 h-10 flex justify-center items-center rounded-full"
         aria-label="Call"
-    >
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.8"
-        stroke="currentColor"
-        class="w-5 h-5"
         >
-        <path
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="w-5 h-5"
+        >
+            <path
             stroke-linecap="round"
             stroke-linejoin="round"
             d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h2.55c.94 0 1.768.582 2.091 1.462l1.003 2.757a2.25 2.25 0 01-.502 2.318l-.875.875a15.048 15.048 0 006.364 6.364l.875-.875a2.25 2.25 0 012.318-.502l2.757 1.003A2.25 2.25 0 0121.75 19.2v2.55a2.25 2.25 0 01-2.25 2.25A17.25 17.25 0 012.25 6.75z"
-        />
+            />
         </svg>
-    </a>
+        </a>
 
-    <!-- Mobile Menu Button -->
-    <button
+        <!-- Mobile Menu Button -->
+        <button
         id="menu-toggle"
         class="icon-btn w-10 h-10 flex justify-center items-center rounded-full md:hidden"
         aria-label="Menu"
-    >
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.8"
-        stroke="currentColor"
-        class="w-6 h-6"
         >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="w-6 h-6"
+        >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
-    </button>
+        </button>
     </div>
 
     <!-- Mobile Menu -->
     <div
-    id="mobile-menu"
-    class="hidden absolute top-[70px] left-0 w-full rounded-3xl glass-bg py-4 text-center backdrop-blur-xl animate-fadeIn"
+        id="mobile-menu"
+        class="hidden absolute top-[70px] left-0 w-full rounded-3xl glass-bg py-4 text-center backdrop-blur-xl animate-fadeIn text-black dark:text-white"
     >
-    <ul class="flex flex-col space-y-4 font-medium">
-        <li><a href="#home" class="block hover:text-gray-500 transition">Home</a></li>
-        <li><a href="#about" class="block hover:text-gray-500 transition">About</a></li>
-        <li><a href="#services" class="block hover:text-gray-500 transition">Services</a></li>
-        <li><a href="#contact" class="block hover:text-gray-500 transition">Contact</a></li>
-    </ul>
+        <ul class="flex flex-col space-y-4 font-medium">
+        <li><a href="#home" class="block hover:text-gray-500 dark:hover:text-gray-300 transition">Home</a></li>
+        <li><a href="#about" class="block hover:text-gray-500 dark:hover:text-gray-300 transition">About</a></li>
+        <li><a href="#services" class="block hover:text-gray-500 dark:hover:text-gray-300 transition">Services</a></li>
+        <li><a href="#contact" class="block hover:text-gray-500 dark:hover:text-gray-300 transition">Contact</a></li>
+        </ul>
     </div>
 
     <style>
-    .glass-bg {
+        .glass-bg {
         background: rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(12px) saturate(180%);
         -webkit-backdrop-filter: blur(12px) saturate(180%);
-    }
+        }
 
-    .dark .glass-bg {
+        .dark .glass-bg {
         background: rgba(0, 0, 0, 0.25);
-    }
+        }
 
-    .icon-btn {
+        .icon-btn {
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         transition: all 0.3s ease;
-    }
+        }
 
-    .dark .icon-btn {
+        .dark .icon-btn {
         background: rgba(0, 0, 0, 0.3);
-    }
+        }
 
-    .icon-btn:hover {
+        .icon-btn:hover {
         transform: scale(1.05);
         background: rgba(255, 255, 255, 0.3);
-    }
+        }
 
-    .dark .icon-btn:hover {
+        .dark .icon-btn:hover {
         background: rgba(255, 255, 255, 0.1);
-    }
+        }
 
-    /* Mobile fade animation */
-    @keyframes fadeIn {
+        /* Fade animation */
+        @keyframes fadeIn {
         from {
-        opacity: 0;
-        transform: translateY(-10px);
+            opacity: 0;
+            transform: translateY(-10px);
         }
         to {
-        opacity: 1;
-        transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
-    }
-
-    .animate-fadeIn {
+        }
+        .animate-fadeIn {
         animation: fadeIn 0.3s ease;
-    }
+        }
     </style>
 
     <script>
-    let lastScroll = 0;
-    const navbar = document.getElementById("navbar");
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
+        const navbar = document.getElementById("navbar");
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        let lastScroll = 0;
 
-    // Show/Hide Navbar on Scroll
-    window.addEventListener("scroll", () => {
+        // Show/Hide Navbar on Scroll
+        window.addEventListener("scroll", () => {
         const currentScroll = window.pageYOffset;
         if (currentScroll > lastScroll && currentScroll > 80) {
-        navbar.style.top = "-100px"; // Hide on scroll down
+            navbar.style.top = "-100px";
         } else {
-        navbar.style.top = "20px"; // Show on scroll up
+            navbar.style.top = "20px";
         }
         lastScroll = currentScroll;
-    });
+        });
 
-    // Toggle mobile menu
-    menuToggle.addEventListener("click", () => {
+        // Toggle Mobile Menu
+        menuToggle.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
-    });
+        });
+
+        // Auto-detect system theme and apply
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.classList.add("dark");
+        } else {
+        document.documentElement.classList.remove("dark");
+        }
+
+        // Live sync if system theme changes
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+        if (e.matches) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+        });
     </script>
     </nav>
+
+
 
     <section
     id="hero"
@@ -266,183 +283,180 @@
     </script>
     </section>
 
-    <section
-    id="about"
-    class="relative bg-black text-white py-20 px-6 md:px-12 overflow-hidden rounded-b-3xl"
-    >
-    <div class="max-w-6xl mx-auto fade-section">
+<section
+  id="about"
+  class="relative bg-white dark:bg-black text-black dark:text-white py-20 px-6 md:px-12 overflow-hidden rounded-b-3xl transition-colors duration-500"
+>
+  <div class="max-w-6xl mx-auto fade-section">
     <!-- Title -->
-    <h2
-        class="text-4xl sm:text-5xl md:text-6xl font-axuno font-bold text-center mb-16"
-    >
-        About Us
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-axuno font-bold text-center mb-16">
+      About Us
     </h2>
 
     <!-- Content Row -->
     <div class="grid md:grid-cols-2 gap-12 items-center">
-        <!-- Text Column -->
-        <div class="space-y-6">
-        <p class="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
-            At <span class="font-bold text-white">GIFWATCH3S</span>, we believe in blending
-            cutting-edge technology with timeless design. Our mission is to create
-            motion that inspires — where every detail represents performance,
-            precision, and passion.
+      <!-- Text Column -->
+      <div class="space-y-6">
+        <p class="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          At <span class="font-bold text-black dark:text-white">GIFWATCH3S</span>, we believe in
+          blending cutting-edge technology with timeless design. Our mission is
+          to create motion that inspires — where every detail represents
+          performance, precision, and passion.
         </p>
 
-        <p class="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed">
-            With a relentless pursuit of innovation, we craft experiences that
-            redefine the modern biking journey — from the way it feels to the way
-            it looks.
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
+          With a relentless pursuit of innovation, we craft experiences that
+          redefine the modern biking journey — from the way it feels to the way
+          it looks.
         </p>
-        </div>
+      </div>
 
-        <!-- Image Column -->
-        <div class="flex flex-wrap justify-center gap-4">
+      <!-- Image Column -->
+      <div class="flex flex-wrap justify-center gap-4">
         <img
-            src="/assets/cardigan.jpeg"
-            alt="Cardigan"
-            class="w-36 sm:w-44 md:w-48 lg:w-52 rounded-2xl object-cover cursor-pointer glass-card transition-transform duration-300 hover:scale-105"
-            onclick="openModal(0)"
+          src="/assets/cardigan.jpeg"
+          alt="Cardigan"
+          class="w-36 sm:w-44 md:w-48 lg:w-52 rounded-2xl object-cover cursor-pointer glass-card transition-transform duration-300 hover:scale-105"
+          onclick="openModal(0)"
         />
         <img
-            src="/assets/plaidshirt.jpeg"
-            alt="Plaid Shirt"
-            class="w-36 sm:w-44 md:w-48 lg:w-52 rounded-2xl object-cover cursor-pointer glass-card transition-transform duration-300 hover:scale-105"
-            onclick="openModal(1)"
+          src="/assets/plaidshirt.jpeg"
+          alt="Plaid Shirt"
+          class="w-36 sm:w-44 md:w-48 lg:w-52 rounded-2xl object-cover cursor-pointer glass-card transition-transform duration-300 hover:scale-105"
+          onclick="openModal(1)"
         />
         <img
-            src="/assets/poloshirt.jpeg"
-            alt="product 3"
-            class="w-36 sm:w-44 md:w-48 lg:w-52 rounded-2xl object-cover cursor-pointer glass-card transition-transform duration-300 hover:scale-105"
-            onclick="openModal(2)"
+          src="/assets/poloshirt.jpeg"
+          alt="Polo Shirt"
+          class="w-36 sm:w-44 md:w-48 lg:w-52 rounded-2xl object-cover cursor-pointer glass-card transition-transform duration-300 hover:scale-105"
+          onclick="openModal(2)"
         />
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 
-    <!-- Modal -->
-    <div
+  <!-- Modal -->
+  <div
     id="imageModal"
     class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
-    >
+  >
     <div
-        class="relative bg-black rounded-3xl overflow-hidden w-[90%] md:w-[70%] lg:w-[60%] max-h-[80vh]"
+      class="relative bg-black dark:bg-white rounded-3xl overflow-hidden w-[90%] md:w-[70%] lg:w-[60%] max-h-[80vh] transition-colors duration-500"
     >
-        <!-- Close Button -->
-        <button
+      <!-- Close Button -->
+      <button
         onclick="closeModal()"
-        class="absolute top-4 right-4 text-gray-400 hover:text-white transition"
-        >
+        class="absolute top-4 right-4 text-gray-400 dark:text-gray-700 hover:text-white dark:hover:text-black transition"
+      >
         ✕
-        </button>
+      </button>
 
-        <!-- Scrollable Image Row -->
-        <div
-        id="modalImages"
-        class="flex overflow-x-auto no-scrollbar space-x-4 p-4"
-        >
+      <!-- Scrollable Image Row -->
+      <div id="modalImages" class="flex overflow-x-auto no-scrollbar space-x-4 p-4">
         <img
-            src="/assets/cardigan.jpeg"
-            alt="Cardigan"
-            class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
+          src="/assets/cardigan.jpeg"
+          alt="Cardigan"
+          class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
         />
         <img
-            src="/assets/plaidshirt.jpeg"
-            alt="Plaid shirt"
-            class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
+          src="/assets/plaidshirt.jpeg"
+          alt="Plaid shirt"
+          class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
         />
         <img
-            src="/assets/poloshirt.jpeg"
-            alt="Polo Shirt"
-            class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
+          src="/assets/poloshirt.jpeg"
+          alt="Polo Shirt"
+          class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
         />
-                <img
-            src="/assets/trouser.jpeg"
-            alt="Trouser"
-            class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
+        <img
+          src="/assets/trouser.jpeg"
+          alt="Trouser"
+          class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
         />
-                <img
-            src="/assets/trouser-2.jpeg"
-            alt="Trouser"
-            class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
+        <img
+          src="/assets/trouser-2.jpeg"
+          alt="Trouser"
+          class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
         />
-                <img
-            src="/assets/cargotrouser.jpg"
-            alt="Cargo"
-            class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
+        <img
+          src="/assets/cargotrouser.jpg"
+          alt="Cargo"
+          class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
         />
-                <img
-            src="/assets/timberland.jpg"
-            alt="Shoe"
-            class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
+        <img
+          src="/assets/timberland.jpg"
+          alt="Shoe"
+          class="w-[300px] md:w-[400px] lg:w-[500px] rounded-2xl object-cover flex-shrink-0"
         />
-
-        
+      </div>
     </div>
-    </div>
+  </div>
 
-    <style>
+  <style>
     /* Shared Glass Effect */
     .glass-card {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .dark .glass-card {
+      background: rgba(0, 0, 0, 0.3);
     }
 
     /* Hide Scrollbar */
     .no-scrollbar::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
 
     .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
 
     /* Fade-in Animation */
     .fade-section {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.8s ease, transform 0.8s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
     .fade-section.visible {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* Subtle pulse animation for cards */
     @keyframes softPulse {
-        0% {
+      0% {
         transform: scale(1);
-        }
-        50% {
+      }
+      50% {
         transform: scale(1.02);
-        }
-        100% {
+      }
+      100% {
         transform: scale(1);
-        }
+      }
     }
 
     .glass-card:hover {
-        animation: softPulse 2s ease-in-out infinite;
+      animation: softPulse 2s ease-in-out infinite;
     }
-    </style>
+  </style>
 
-    <script>
+  <script>
     // Fade-in Observer
     const aboutFadeSections = document.querySelectorAll(".fade-section");
-
     const aboutObserver = new IntersectionObserver(
-        (entries) => {
+      (entries) => {
         entries.forEach((entry) => {
-            if (entry.isIntersecting) {
+          if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            } else {
+          } else {
             entry.target.classList.remove("visible");
-            }
+          }
         });
-        },
-        { threshold: 0.2 }
+      },
+      { threshold: 0.2 }
     );
 
     aboutFadeSections.forEach((section) => aboutObserver.observe(section));
@@ -451,21 +465,38 @@
     const modal = document.getElementById("imageModal");
 
     function openModal(index) {
-        modal.classList.remove("hidden");
-        document.body.style.overflow = "hidden";
-        const scrollContainer = document.getElementById("modalImages");
-        scrollContainer.scrollTo({
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+      const scrollContainer = document.getElementById("modalImages");
+      scrollContainer.scrollTo({
         left: index * scrollContainer.children[0].offsetWidth,
         behavior: "smooth",
-        });
+      });
     }
 
     function closeModal() {
-        modal.classList.add("hidden");
-        document.body.style.overflow = "auto";
+      modal.classList.add("hidden");
+      document.body.style.overflow = "auto";
     }
-    </script>
-    </section>
+
+    // Auto-detect and sync theme
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    // Live sync when system theme changes
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+      if (e.matches) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    });
+  </script>
+</section>
+
 
     <section
     id="products"
